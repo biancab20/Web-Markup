@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+
+body {
+    margin: 50px;
+}
+
+/* Navigation */
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.left, .right {
+    flex: 1;
+    border: 1.5px solid black;
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px; 
+    height: 150px; 
+}
+
+.logo img {
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    padding: 15px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline red;
+}
