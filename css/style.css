@@ -186,35 +186,53 @@ h1 {
     left: 135px;
     top: -110px;
     text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black, 2px 2px 2px black;
+    letter-spacing: normal;
+    text-indent: 0%;
+    word-spacing: normal;
 }
 
 #h2Introduction {
     right: 17%;
     transform: translateX(-17%);
+    letter-spacing: normal;
+    text-indent: 0%;
+    word-spacing: normal;
 }
 
 .h2Right {
     position: relative;
     top: -110%;
     right: -19%;
+    letter-spacing: normal;
+    text-indent: 0%;
+    word-spacing: normal;
 }
 
 .h2Left {
     position: relative;
     left: -19%;
     top: -110%;
+    letter-spacing: normal;
+    text-indent: 0%;
+    word-spacing: normal;
 }
 
 .p-right {
     position: relative;
     right: -40%;
     top: -110%;
+    letter-spacing: normal;
+    text-indent: 0%;
+    word-spacing: normal;
 }
 
 .p-left {
     position: relative;
     left: 3%;
     top: -110%;
+    letter-spacing: normal;
+    text-indent: 0%;
+    word-spacing: normal;
 }
 
 .pictureLeftEvents img {
@@ -333,6 +351,7 @@ header {
 
 table, th, td {
     border:2px solid black;
+    border-width: 2px;
     border-collapse: collapse;
     padding: 4px;
 }
@@ -362,6 +381,48 @@ td {
     position: relative;
     top: -75vh;
     right: -95vh;
+}
+
+/* Contact page */
+
+form {
+    margin: 100px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+form h2 {
+    position: relative;
+
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
 }
 
 /* Elements style */
@@ -448,5 +509,35 @@ button:hover {
 
 button:hover a {
     color: #D11F25;
+}
+
+.cookie {
+    flex: 0 1 auto;
+    margin-left: auto;
+    margin-top: 8px;
+    margin-right: 0px;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    color: black;
+    position: fixed;
+    border-radius: 13px;
+    text-indent: 0px;
+    opacity: 50%;
+    padding: 8px;
+    width: 200px;
+    z-index: 9999;
+    bottom: 0;
+    right: 0;
+    background-color: #FFF6C6;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-align: center;
+}
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+
 }
 
