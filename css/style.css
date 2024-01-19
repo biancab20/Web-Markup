@@ -8,11 +8,17 @@ body {
 
 .nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 70px;
 }
 
-.left, .right {
+.left{
+    flex: 0.3;
+    border: 1.5px solid black;
+    height: 70px;
+} 
+.right {
     flex: 1;
     border: 1.5px solid black;
     height: 70px;
@@ -22,7 +28,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px; 
+    width: 200px; 
     height: 150px; 
 }
 
@@ -36,17 +42,113 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    justify-content: end;
 }
 
 .nav ul li {
-    padding: 15px;
+    padding: 15px 25px;
 }
 
 .nav ul li a {
     text-decoration: none;
     font-size: 2em;
+    color: black;
+    font-family: 'Zen+Antique';
 }
 
 .nav ul li a:hover {
-    text-decoration: underline red;
+    position: relative;
+    color: #CC5E61;
 }
+
+.nav ul li a:active {
+    position: relative;
+    color: #D11F25;
+}
+
+.nav ul li a:active::after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    border-bottom: 4px solid black;
+    bottom: -19px;
+    left: -10%;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background: #EEEEEE;
+    padding: 10px 0;
+    /* position: relative; */
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.background {
+    box-sizing: border-box;
+    position: relative;
+    width: 1440px;
+    height: 293px;
+    margin: 0 auto;
+    background: #eeeeee;
+}
+
+.logoFooter {
+    display: flex;
+    gap: 20px;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 120px;
+    top: 180px;
+}
+
+.firstColumn, .secondColumn {
+    display: flex;
+    position: absolute;
+}
+
+.firstColumn {
+    left: 500px;
+    top: 220px;
+}
+
+.secondColumn {
+    right: 550px;
+    top: 220px;
+}
+
+.footerItems {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer ul {
+    list-style-type: none;
+
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Zen+Antique';
+    font-size: 17;
+}
+
+.footer ul li a:hover {
+    color: #D11F25;
+    position: relative;
+    text-decoration: underline #D11F25;
+}
+
+.title {
+    position: absolute;
+    top: 200px;
+}
+
