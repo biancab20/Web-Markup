@@ -311,11 +311,57 @@ header {
     right: -37%;
 }
 
-.positionH2Low {
+.positionH2 {
     position: relative;
     top: -500px;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.pictureLeftRestaurants {
+    position: relative;
+    width: 610px;
+    height: 481px;
+    top: -500px;
+}
+
+.subheaderRight {
+    position: relative;
+    top: -143vh;
+    right: -75vh;
+}
+
+table, th, td {
+    border:2px solid black;
+    border-collapse: collapse;
+    padding: 4px;
+}
+
+td {
+    color: black;
+    font-size: 20px;
+    font-family: Zen Antique;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word
+}
+
+.table-right {
+    position: relative;
+    top: -160vh;
+    right: -140vh;
+}
+
+.location img {
+    position: relative;
+    top: -140vh;
+    right: -85vh;
+}
+
+.btn-left {
+    position: relative;
+    top: -75vh;
+    right: -95vh;
 }
 
 /* Elements style */
