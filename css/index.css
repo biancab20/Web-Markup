@@ -12,7 +12,7 @@ p {
   line-height: 30px;
   font-weight: 400;
   text-align: center;
-  word-wrap: break-all;
+  word-wrap: break-word;
 }
 
 h2, h3 {
@@ -60,7 +60,6 @@ nav label,
   align-items: center;
   height: 150px;
   max-width: 100%;
-  max-height: auto;
   margin-right: 8px;
   margin-left: 8px;
 }
@@ -114,7 +113,6 @@ nav label,
 }
 
 #imageIntroduction {
-  box-sizing: 50%;
   position: relative;
 }
 
@@ -132,7 +130,7 @@ nav label,
   font-size: 131px;
   font-family: Inter;
   font-weight: 400;
-  word-wrap: break-all;
+  word-wrap: break-word;
   max-width: 500px;
   top: -30px;
   left: 100px;
@@ -144,7 +142,6 @@ nav label,
 }
 
 #contentIntroduction {
-  box-sizing: 50%;
   position: absolute;
   max-width: 600px;
   right: 130px;
@@ -300,7 +297,7 @@ margin-top: 40px;
     color: white;
     font-size: 8vw;
     font-family: Inter;
-    word-wrap: break-all;
+    word-wrap: break-word;
     max-width: 90%;
     text-shadow: -2px -2px 2px black, 2px -2px 2px black, -2px 2px 2px black,
       2px 2px 2px black;
