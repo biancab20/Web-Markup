@@ -1,136 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Bianca Burlacu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Bianca Burlacu" />
+    <meta
+      name="description"
+      content="Discover the rich flavors of Asian cuisine in Haarlem—explore a world of taste and variety!"
+    />
+    <meta
+      name="keywords"
+      content="Haarlem, Restaurants, Diversity, Asian cuisine, Gourmand"
+    />
     <title>Webmarkup</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-</head>
-<body>
-    <nav class="nav">
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav>
         <section class="left"></section>
-        <section class="logo">
-            <img src="img/Logo.png" alt="Logo">
-        </section>
+        <img src="img/Logo.png" alt="Logo" class="logo" title="Logo" />
         <section class="right">
-            <ul class="navitems">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="South.html">South</a></li>
-                <li><a href="Southeast.html">Southeast</a></li>
-                <li><a href="East.html">East</a></li>
-                <li><a href="West.html">West</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
+          <label for="hamburger"> &#9776;</label>
+          <input type="checkbox" id="hamburger" />
+          <ul class="navitems">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="South.html">South</a>
+            </li>
+            <li>
+              <a href="Southeast.html">Southeast</a>
+            </li>
+            <li>
+              <a href="East.html">East</a>
+            </li>
+            <li>
+              <a href="West.html">West</a>
+            </li>
+            <li>
+              <a href="Contact.html">Contact</a>
+            </li>
+          </ul>
         </section>
-    </nav>
+      </nav>
+    </header>
 
-    <article id="introductionBlock">
-        <h1>Haarlem Diversity of Asian Food</h1>
-        <section id="contentIntroduction">
-            <em>
-                <h2 id="h2Introduction">About us</h2>
-            </em>
-            <p id="aboutUs">We know how hard it is to be far away from home. That’s why we are here for you! On our website, you can find Asian cuisines based on geographical location, right here in Haarlem! What are you waiting for? Go and check out your next dining place! You can find information about rating, location, and links to the websites.</p>
-        </section>
-        <section id="pictureHaarlem">
-            <img src="img/haarlemImage.png" alt="Image of Haarlem">
-        </section>
-    </article>
+    <section id="introductionBlock">
+      <section id="imageIntroduction">
+        <em id="bigTitle">Haarlem Diversity of Asian Food</em>
+        <img
+          src="img/haarlemImage.png"
+          alt="Image of Haarlem"
+          id="pictureHaarlem"
+          title="Picture of Haarlem"
+        />
+      </section>
 
-    <article class="titleWithBackground">
-        <h2 class="h2Middle">Join food events</h2>
-    </article>
+      <section id="contentIntroduction">
+        <h1>About us</h1>
+        <p>
+          We know how hard it is to be far away from home. That’s why we are
+          here for you! On our website, you can find Asian cuisines based on
+          geographical location, right here in Haarlem! What are you waiting
+          for? Go and check out your next dining place! You can find information
+          about rating, location, and links to the websites.
+        </p>
+        <a class="button" href="/">Check it out now!</a>
+      </section>
+    </section>
+
+    <section class="titleWithBackground">
+      <h1>Join food events</h1>
+    </section>
 
     <aside>
-        <p class="p-middle">Stay updated on exiting food-related event happening in Haarlem. Whether it’s cultural festivals or culinary workshops, there’s always something delicious to explore.</p>
+      <p>
+        Stay updated on exiting food-related event happening in Haarlem. Whether
+        it’s cultural festivals or culinary workshops, there’s always something
+        delicious to explore.
+      </p>
     </aside>
 
     <article>
-        <section class="pictureLeftEvents">
-            <img src="img/proefpark.PNG" alt="Image of ProefPark">
-        </section>
-        <span class="parallelogramRight"></span>
-        <h2 class="h2Right">ProefPark</h2>
-        <p class="p-right">You have to be in the monumental Kenaupark for the late summer festival the last weekend before schools start again.  An event with food trucks and their cooking artists in the leading role. With a food line-up of 30 moving kitchens on wheels that together prepare the best street food that is currently available in the Netherlands.  All continents are represented: from Asia to Africa and from Europe to South America. Gluten- and lactose-free, vegan, short-seared red meat, desserts and appetizers; you name it and it is offered with over 90 different tastings.</p>
-        <p class="p-right">Do you want to know more about it?</p>
-        <button class="btnRight"><a href="https://www.proefparkhaarlem.nl/">Visit their website</a></button>
+      <img
+        class="imgEvents"
+        src="img/proefpark.PNG"
+        alt="Image of ProefPark"
+        title="Image of ProefPark"
+      />
+
+      <section class="contentEvents">
+        <h2>ProefPark</h2>
+        <p>
+          You have to be in the monumental Kenaupark for the late summer
+          festival the last weekend before schools start again. An event with
+          food trucks and their cooking artists in the leading role. With a food
+          line-up of 30 moving kitchens on wheels that together prepare the best
+          street food that is currently available in the Netherlands. All
+          continents are represented: from Asia to Africa and from Europe to
+          South America. Gluten- and lactose-free, vegan, short-seared red meat,
+          desserts and appetizers; you name it and it is offered with over 90
+          different tastings.
+        </p>
+        <p>Do you want to know more about it?</p>
+        <a class="button" href="https://www.proefparkhaarlem.nl/"
+          >Visit their website</a
+        >
+      </section>
     </article>
 
     <article>
-        <section class="pictureRightEvents">
-            <img src="img/taptFestival.PNG" alt="Image of Tapt Festival">
-        </section>
-        <span class="parallelogramLeft"></span>
-        <h2 class="h2Left">Tapt Festival</h2>
-        <p class="p-left">You have to be in the monumental Kenaupark for the late summer festival the last weekend before schools start again.  An event with food trucks and their cooking artists in the leading role. With a food line-up of 30 moving kitchens on wheels that together prepare the best street food that is currently available in the Netherlands.  All continents are represented: from Asia to Africa and from Europe to South America. Gluten- and lactose-free, vegan, short-seared red meat, desserts and appetizers; you name it and it is offered with over 90 different tastings.</p>
+      <section class="contentEvents">
+        <h2>Tapt Festival</h2>
+        <p>
+          You have to be in the monumental Kenaupark for the late summer
+          festival the last weekend before schools start again. An event with
+          food trucks and their cooking artists in the leading role. With a food
+          line-up of 30 moving kitchens on wheels that together prepare the best
+          street food that is currently available in the Netherlands. All
+          continents are represented: from Asia to Africa and from Europe to
+          South America. Gluten- and lactose-free, vegan, short-seared red meat,
+          desserts and appetizers; you name it and it is offered with over 90
+          different tastings.
+        </p>
         <p class="p-left">Do you want to know more about it?</p>
-        <button class="btnLeft"><a href="https://taptfestival.nl/">Visit their website</a></button>
+        <a class="button" href="https://taptfestival.nl/"
+          >Visit their website</a
+        >
+      </section>
+
+      <img
+        class="imgEvents"
+        src="img/taptFestival.PNG"
+        alt="Image of Tapt Festival"
+        title="Image of Tapt Festival"
+      />
     </article>
 
     <article>
-        <section class="pictureLeftEvents">
-            <img src="img/walkingDinner.png" alt="Image of Walking Dinner">
-        </section>
-        <span class="parallelogramRight"></span>
-        <h2 class="h2Right">Walking Dinner</h2>
-        <p class="p-right">Waking Dinner, a night out where you will visit three different restaurants and discover a city in a unique way. A Walking Dinner is the perfect opportunity for tourists to view the highlights of a city while enjoying a delicious 3-course dinner. It’s Walking Dinner’s mission to offer a unique new way of dining whilst in the meantime discovering a city. Walking Dinner has the expertise in setting up the most beautiful city walks. Walking Dinner only cooperates with carefully selected restaurants that offer a great price-quality level. In this way we can offer you a great, culinary and innovative night out for a great value for money.</p>
-        <p class="p-right">Do you want to know more about it?</p>
-        <button class="btnRight"><a href="https://www.walkingdinner.com/about">Visit their website</a></button>
+      <img
+        class="imgEvents"
+        src="img/walkingDinner.png"
+        alt="Image of Walking Dinner"
+        title="Image of Walking Dinner"
+      />
+      <section class="contentEvents">
+        <h2>Walking Dinner</h2>
+        <p>
+          Waking Dinner, a night out where you will visit three different
+          restaurants and discover a city in a unique way. A Walking Dinner is
+          the perfect opportunity for tourists to view the highlights of a city
+          while enjoying a delicious 3-course dinner. It’s Walking Dinner’s
+          mission to offer a unique new way of dining whilst in the meantime
+          discovering a city. Walking Dinner has the expertise in setting up the
+          most beautiful city walks. Walking Dinner only cooperates with
+          carefully selected restaurants that offer a great price-quality level.
+          In this way we can offer you a great, culinary and innovative night
+          out for a great value for money.
+        </p>
+        <p>Do you want to know more about it?</p>
+        <a class="button" href="https://www.walkingdinner.com/about"
+          >Visit their website</a
+        >
+      </section>
     </article>
 
     <article>
-        <section class="pictureRightEvents">
-            <img src="img/dinnerTrain.png" alt="Image of Dinner Train">
-        </section>
-        <span class="parallelogramLeft"></span>
-        <h2 class="h2Left">Dinner Train</h2>
-        <p class="p-left">Why do the same thing when it can be done differently? Offering dinner is widely known. Traveling by train too, everyone knows the yellow blue trains of NS in the Netherlands. Dining on a moving train? Why not! A special experience with recognizable elements, that's how you could describe Dinner Train. We want to offer our guests something they have not experienced before, but still keep it accessible so that everyone can use it.</p>
-        <p class="p-left">Do you want to know more about it?</p>
-        <button class="btnLeft"><a href="https://dinnertrain.eu/haarlem/?utm_source=daisycon&utm_medium=affiliate&utm_campaign=daisycon_ExpatINFO%20Holland">Visit their website</a></button>
+      <section class="contentEvents">
+        <h2>Dinner Train</h2>
+        <p>
+          Why do the same thing when it can be done differently? Offering dinner
+          is widely known. Traveling by train too, everyone knows the yellow
+          blue trains of NS in the Netherlands. Dining on a moving train? Why
+          not! A special experience with recognizable elements, that's how you
+          could describe Dinner Train. We want to offer our guests something
+          they have not experienced before, but still keep it accessible so that
+          everyone can use it.
+        </p>
+        <p>Do you want to know more about it?</p>
+        <a
+          class="button"
+          href="https://dinnertrain.eu/haarlem/?utm_source=daisycon&utm_medium=affiliate&utm_campaign=daisycon_ExpatINFO%20Holland"
+          >Visit their website</a
+        >
+      </section>
+      <img
+        class="imgEvents"
+        src="img/dinnerTrain.png"
+        alt="Image of Dinner Train"
+        title="Image of Dinner Train"
+      />
     </article>
-    
-    <footer class="footer">
-        <section id="footer-sec-1">
-            <section class="logoFooter">
-                <img src="img/Logo.png" alt="Logo">
-            </section>
-            <section class="footerList">
-                <ul class="footerItems">
-                    <li class="title">Home</li>
-                    <li></li>
-                    <li><a href="index.html#aboutUs">About Us</a></li>
-                    <li><a href="">Events</a></li>
-                    <li><a href="">Markets</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                </ul>
-            </section>
-            <section class="footerList">
-                <ul class="footerItems">
-                    <li class="title">Cuisines</li>
-                    <li></li>
-                    <li><a href="South.html">South</a></li>
-                    <li><a href="Southeast.html">Southeast</a></li>
-                    <li><a href="East.html">East</a></li>
-                    <li><a href="West.html">West</a></li>
-    
-                </ul>
-            </section>
-            <section>
-                <button><a href="Contact.html">Get in touch</a></button>
-                <!-- <button class="socialIcon"></button> -->
-            </section>
-        </section>
-        <section id="footer-sec-2">
-            <section id="line">
-            </section>
-            <cite>
-                &copy;Copyright © Haarlem Diversity of Asian Food | All Rights Reserved 
-            </cite>
-        </section>
-        <section class="cookie">
-            <h4>Cookie Statement</h4>
-        </section>
+
+    <footer id="cookie-notice">
+        &copy; Burlacu Bianca. This site is using cookies. By using this website, you agree to our cookie policy.
     </footer>
-</body>
+  </body>
 </html>

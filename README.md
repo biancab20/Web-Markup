@@ -7,8 +7,7 @@ During this course, I had to develop a  well-designed responsive website with a 
 
 Student name: Burlacu Bianca
 Student number: 705366
-Student class: IT 2 B
+Student class: Retake
 GitHub Repository: https://github.com/biancab20/Web-Markup
 GitHub Pages URL: https://biancab20.github.io/Web-Markup/
 
-*I want to specify that I did not made a mobile version of the website for the course Web Design.

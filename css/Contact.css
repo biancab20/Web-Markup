@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Zen+Antique";
+  color: black;
+}
+
+p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Header */
+header {
+  margin-top: 50px;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 55px;
+}
+
+nav label,
+#hamburger {
+  display: none;
+}
+
+.left {
+  flex: 0.3;
+  border: 1.5px solid black;
+  height: 55px;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
+}
+
+.right {
+  flex: 1;
+  border: 1.5px solid black;
+  height: 55px;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  max-width: 100%;
+  max-height: auto;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.navitems {
+  list-style-type: none;
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.navitems li {
+  padding: 5px;
+  padding-left: 10px;
+}
+
+.navitems li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.navitems a:hover {
+  color: #cc5e61;
+}
+
+.navitems a:active {
+  color: #d11f25;
+  border-bottom: 4px solid black;
+}
+
+.navitems li:nth-child(6) a {
+  color: #d11f25;
+  border-bottom: 4px solid black;
+}
+
+/* Mobile version */
+
+@media screen and (max-width: 768px) {
+    /* Header */
+  
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    nav label {
+      display: inline-block;
+      color: #000;
+      background: #fff;
+      font-size: 2em;
+      font-style: normal;
+      padding: 13px;
+      cursor: pointer;
+    }
+  
+    .right {
+      flex: 1;
+      border: 1.5px solid black;
+      box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
+      text-align: right;
+    }
+  
+    .left {
+      display: none;
+    }
+  
+    .navitems {
+      position: absolute;
+      left: 0;
+      right: 0;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      color: #000000;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      border: 1px solid #000000;
+      border-style: double;
+      margin: 0;
+      width: 100%;
+    }
+    .navitems li {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    nav input:checked ~ .navitems {
+      display: flex;
+      top: 0;
+    }
+  
+    #reset-button:checked ~ nav input {
+      display: none;
+    }
+  }
+  
